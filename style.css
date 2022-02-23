@@ -1,0 +1,868 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    height: 80vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-bottom: 10px solid #222222;
+}
+
+/* -----------------navbar------------------------- */
+.container .navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.container .navbar .logo img{
+    width: 400px;
+    margin-left: -50px;
+}
+
+.container .navbar .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign{
+    margin: 0 50px 0 0;
+}
+
+.container .navbar .right .language select{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+}
+
+.container .navbar .right .signIn{
+    background-color: #e50914;
+    width: 90px;
+    height: 33px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .navbar .right .signIn a{
+    text-decoration: none;
+    color: white;
+}
+
+/* -----------content---------------- */
+
+.content .heading h1{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+.content .title h3{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.content .para p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0 15px 0;
+}
+
+.content .getStarted{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .getStarted form input{
+    width: 500px;
+    height: 75px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.content .getStarted a{
+    background-color: #e50914;
+    width: 245px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 33px;
+    font-weight: 400;
+
+}
+::placeholder{
+    font-size: 20px;
+}
+
+/* ---------------tv section------------- */
+.sections{
+    position: relative
+}
+.sections .tvSection{
+    width: 100%;
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid #222222;
+    position: relative;
+}
+.sections .tvSection .left, .sections .tvSection .right{
+    margin: 0 45px 0 30px;
+}
+.sections .tvSection .left .tvHeading h2{
+    font-size: 60px;
+}
+.sections .tvSection .left .tvPara p{
+    font-size: 30px;
+    font-weight: 300;
+}
+.sections .tvSection .right img{
+    width: 450px;
+}
+.sections .tvSection .right{
+    position: relative;
+    z-index: 4;
+}
+.sections .tvSection .right .video{
+    position: absolute;
+    top: 71px;
+    left: 59px;
+    z-index: -1;
+    
+}
+.sections .tvSection .right .video video{
+    width: 329px;
+
+}
+
+/* ------------------mobile  section---------------------- */
+
+.sections .mobileSection{
+    width: 100%;
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 10px solid #222222;
+}
+.sections .mobileSection .right, .sections .mobileSection .left{
+    margin: 50px 0 40px 0;
+}
+
+.sections .mobileSection .left img{
+    width: 600px;
+}
+
+.sections .mobileSection .right .mobHeading h2{
+    font-size: 50px;
+}
+.sections .mobileSection .right .mobPara p{
+    font-size: 25px;
+}
+
+/* --------------macbook section ------------------------- */
+.macbook {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 10px solid #222222;
+
+}
+.macbook .right, .macbook .left{
+    margin: 50px 0 40px 0;
+}
+.macbook .left .macHeading h2{
+    font-size: 3.125rem;
+}
+
+.macbook .left .macPara p{
+    font-size: 1.625rem;
+    font-weight: 300;
+}
+.macbook .right img{
+    width: 470px;
+}
+.macbook .right{
+    width: 450px;
+    position: relative;
+    z-index: 5;
+
+}
+
+.macbook .right .videoMac{
+    position: absolute;
+    top: 25px;
+    left: 89px;
+    z-index: -2
+}
+
+.macbook .right .videoMac video{
+    width: 288px;
+}
+
+/* -------------child profile------------------------- */
+
+.childProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    border-bottom: 10px solid #222222;
+}
+.childProfile .right, .childProfile .left{
+    margin: 50px 0 40px 0;
+}
+
+.childProfile .left .childIcon img{
+    width: 540px;
+}
+
+.childProfile .right .childHeading h2{
+    font-size: 50px;
+}
+
+.childProfile .right .childPara p{
+    font-size: 25px;
+}
+
+/* ------------------getstarted---------------------- */
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30vh;
+    flex-direction: column;
+    color: white;
+    border-bottom: 10px solid #222222;
+}
+
+.footer1 .getPara p{
+    font-size: 18px;
+}
+
+.footer1 .getForm{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer1 .getForm form input{
+    width: 420px;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+
+
+.footer1 .getForm a{
+    background-color: #e50914;
+    width: 200px;
+    height: 60px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* ----------------footer section----------------------- */
+
+.footer{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    color: #5a5957;
+}
+.footer .question{
+    margin: 40px 0 40px 0;
+    width: 40%;
+    text-align: left;
+}
+.footer .footer2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer2 .mar{
+    margin-left: 120px;
+}
+
+
+.footer2 .footer-left p, .footer2 .footer-middle p, .footer2 .footer-right p, .footer2 .footer-right1 p{
+margin-bottom: 20px;
+}
+
+.footer2 .footer-left select{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #5a5957;
+    background-color: transparent;
+    color: #5a5957;
+    padding: 10px;
+    margin: 20px 0 20px 0;
+}
+
+
+/* ---------------media query for ipad devices------------------------------- */
+@media only screen and (max-width: 768px)  {
+    .container{
+        height: 75vh;
+        background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        border-bottom: 10px solid #222222;
+    }
+    .container .navbar{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        margin-top: 10px;
+    }
+    .container .navbar .logo img{
+        width: 250px;
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+    .container .navbar .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .container .navbar .right .signIn{
+        background-color: #e50914;
+        width: 90px;
+        height: 35px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ---------getstart section------------- */
+    .content .heading h1{
+        color: white;
+        text-align: center;
+        font-size: 50px;
+    }
+    .content .title h3{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .content .para p{
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        margin: 20px 0 15px 0;
+        word-wrap: break-word;
+    }
+    .content .getStarted{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .content .getStarted form input{
+        width: 550px;
+        height:60px;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .content .getStarted a{
+        background-color: #e50914;
+        width: 150px;
+        height: 55px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    /* -----------------tv section---------------- */
+    .sections{
+        position: relative
+    }
+    .sections .tvSections{
+        position: relative;
+    }
+    .sections .tvSection{
+        width: 100%;
+        height: 60vh;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 10px solid #222222;
+        position: relative;
+    }
+    .sections .tvSection .left .tvHeading h2{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    .sections .tvSection .left .tvPara p{
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .sections .tvSection .right img{
+        margin-bottom: 50px;
+        width: 500px;
+        position: relative;
+        left: 0px;
+        top: 0;
+    }
+    .sections .tvSection .right .video video{
+        width: 400px;
+    }
+    /* ----------------mobile section-------------- */
+    .sections .mobileSection{
+        width: 100%;
+        height: 50vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        position: relative;
+        border-bottom: 10px solid #222222;
+    }
+    .sections .mobileSection .right, .sections .mobileSection .left{
+        margin: 0 0 0 0;
+    }
+    .sections .mobileSection .right .mobHeading h2{
+        font-size: 40px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+    .sections .mobileSection .right .mobPara p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .sections .mobileSection .left img{
+        width: 400px;
+        margin: 30px 0 0 0;
+    }
+    /* ----------------macbook------------------1 */
+
+    .macbook .left .macHeading h2{
+        text-align: center;
+        font-size: 45px;
+    }
+    .macbook .left .macPara p{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .macbook .right img{
+        width: 500px;
+    }
+    .macbook .right .videoMac video{
+        width: 310px;
+    }
+
+/* ----------------child -------------------- */
+.childProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    color: white;
+    border-bottom: 10px solid #222222;
+} 
+.childProfile .right .childHeading h2{
+    text-align: center;
+    font-size: 40px;
+}
+.childProfile .right .childPara p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* ----------getstart---------------------- */
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30vh;
+    flex-direction: column;
+    color: white;
+    border-bottom: 10px solid #222222;
+}
+.footer1 .getPara p{
+    font-size: 25px;
+    text-align: center;
+}
+.footer1 .getForm{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.footer1 .getForm form input{
+    width: 550px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer1 .getForm a{
+    background-color: #e50914;
+    width: 150px;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+}
+
+@media only screen and (max-width: 820px) {
+    .container{
+        height: 75vh;
+        background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        border-bottom: 10px solid #222222;
+    }
+    .container .navbar{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        margin-top: 10px;
+    }
+    .container .navbar .logo img{
+        width: 250px;
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+    .container .navbar .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .container .navbar .right .signIn{
+        background-color: #e50914;
+        width: 90px;
+        height: 35px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ---------getstart section------------- */
+    .content .heading h1{
+        color: white;
+        text-align: center;
+        font-size: 50px;
+    }
+    .content .title h3{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .content .para p{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 50px;
+        font-weight: 400;
+        margin: 20px 0 15px 0;
+        word-wrap: break-word;
+    }
+    .content .getStarted{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .content .getStarted form input{
+        width: 550px;
+        height:60px;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .content .getStarted a{
+        background-color: #e50914;
+        width: 150px;
+        height: 55px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    /* -----------------tv section---------------- */
+    .sections{
+        position: relative
+    }
+    .sections .tvSections{
+        position: relative;
+    }
+    .sections .tvSection{
+        width: 100%;
+        height: 60vh;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 10px solid #222222;
+        position: relative;
+    }
+    .sections .tvSection .left .tvHeading h2{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    .sections .tvSection .left .tvPara p{
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .sections .tvSection .right img{
+        margin-bottom: 50px;
+        width: 500px;
+        position: relative;
+        left: 0px;
+        top: 0;
+    }
+    .sections .tvSection .right .video video{
+        width: 400px;
+    }
+    /* ----------------mobile section-------------- */
+    .sections .mobileSection{
+        width: 100%;
+        height: 50vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        position: relative;
+        border-bottom: 10px solid #222222;
+    }
+    .sections .mobileSection .right, .sections .mobileSection .left{
+        margin: 0 0 0 0;
+    }
+    .sections .mobileSection .right .mobHeading h2{
+        font-size: 40px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+    .sections .mobileSection .right .mobPara p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .sections .mobileSection .left img{
+        width: 400px;
+        margin: 30px 0 0 0;
+    }
+    /* ----------------macbook------------------1 */
+
+    .macbook .left .macHeading h2{
+        text-align: center;
+        font-size: 45px;
+    }
+    .macbook .left .macPara p{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .macbook .right img{
+        width: 500px;
+    }
+    .macbook .right .videoMac video{
+        width: 310px;
+    }
+
+/* ----------------child -------------------- */
+.childProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    color: white;
+    border-bottom: 10px solid #222222;
+} 
+.childProfile .right .childHeading h2{
+    text-align: center;
+    font-size: 40px;
+}
+.childProfile .right .childPara p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* ----------getstart---------------------- */
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30vh;
+    flex-direction: column;
+    color: white;
+    border-bottom: 10px solid #222222;
+}
+.footer1 .getPara p{
+    font-size: 25px;
+    text-align: center;
+}
+.footer1 .getForm{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.footer1 .getForm form input{
+    width: 550px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer1 .getForm a{
+    background-color: #e50914;
+    width: 150px;
+    height: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+}
+
+
+
+/* ---------------media query for small---------------------- */
+
